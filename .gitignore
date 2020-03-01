@@ -1,3 +1,6 @@
+credentials/*.json
+credentials/*.yml
+
 *.gem
 *.rbc
 /.config
