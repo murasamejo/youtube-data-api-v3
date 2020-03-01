@@ -38,7 +38,13 @@ class Operator
     snippet = {
       snippet: {
         title: title,
-        description: description
+        description: description,
+        # 変数名はスネークケースで記述する
+        # https://github.com/googleapis/google-api-ruby-client/blob/master/generated/google/apis/youtube_v3/representations.rb
+        # 公開（public）/ 限定公開（unlisted）
+        # 有効な値は public、private、および unlisted です。
+        # https://developers.google.com/youtube/v3/guides/uploading_a_video?hl=ja
+        privacy_status: 'private'
       }
     }
 
